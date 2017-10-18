@@ -1,0 +1,17 @@
+{
+  "name": "sns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "localhost"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "local-web-server": "^2.2.4",
+    "localhost": "^0.2.2"
+  }
+}
