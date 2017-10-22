@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>naver-login-api</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+  <div id="naver_id_login"></div>
+
+<script>
+  var naver_id_login = new naver_id_login("psvoIXCKvTXl8GqTeSSZ", "http://localhost:8080/naver-login-api/callback.html");
+  var state = naver_id_login.getUniqState();
+
+  naver_id_login.setButton("white", 2,40);
+  naver_id_login.setDomain("YOUR_SERVICE_URL");
+  naver_id_login.setState(state);
+  naver_id_login.setPopup();
+  naver_id_login.init_naver_id_login();
+</script>
+</body>
+</html>
