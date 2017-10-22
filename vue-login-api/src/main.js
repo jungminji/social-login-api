@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 import VueAuthenticate from 'vue-authenticate'
+import MyPlugin from './myPlugin'
 import App from './App'
 import router from './router'
 
@@ -10,6 +11,7 @@ Vue.use(VueResource)
 Vue.use(VueAuthenticate, {
   baseUrl: 'http://localhost:8080'
 })
+Vue.use(MyPlugin)
 
 Vue.config.productionTip = false
 
